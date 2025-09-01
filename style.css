@@ -1,0 +1,1236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* color: #333; */
+}
+
+header {
+    width: 100%;
+    background-color: #ecefef;   
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 40px auto 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: 70px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right .login {
+    text-decoration: none;
+    color: #030303;
+}
+
+.navbar-right .request {
+    text-decoration: none;
+    color: white;
+    background-color: #247324;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+.on-desktop {
+    display: none;
+}
+
+.hero{
+    display: flex;
+    background-color: #ecefef;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 70px auto 0;
+}
+
+.hero-content-left {
+  width: 60%;
+}
+
+.hero-content-left img{
+    border-radius: 20px;
+    width: 200px;
+}
+
+.hero-content-left h1 {
+    margin: 70px auto 0;
+    margin-left: -25px;
+    text-align: center;
+    font-size: 58px;
+    width: 600px;
+}
+
+.hero-content-left p {
+    margin-top: 20px;
+    font-size: 16px;
+    width: 480px;
+}
+
+.hero-content-left a{
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    top: 30px;
+    background-color:rgb(57, 101, 57);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hero-content-left  .center{ 
+    position: relative;
+    top: 35px;
+    font-size: 10px;
+}
+
+.hero-content-right {
+  width: 40%;
+}
+
+.hero-content-right .llustertion1{
+    border: 2px solid black;
+    width: 450PX;
+    height: 400px;
+    border-radius: 15px;
+    margin-left: 70px;
+}
+
+.hero-content-right .llustertion1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hero-content-right .llustertion2{
+    border: 2px solid black;
+    background-color: white;
+    width: 450PX;
+    height: 100px;
+    border-radius: 15px;
+    margin: 50px auto ;
+    margin-left: 70px;
+    position: relative;
+    bottom: 30px;
+}
+
+.hero-content-right .llustertion2 h4{
+    margin: 30px;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+.hero-content-right .llustertion2 p{
+    font-size: 18px;
+    margin: 12px;
+    margin-top: -25px;
+    margin-left: 100px;
+
+}
+
+.hero-content-right .llustertion2 .size {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.hero-content-right .llustertion2 .size-6 {
+    margin: 15px;
+    width: 30px;
+    color: #1aa47b;
+}
+
+.hero-content-right .llustertion .size1 {
+    background-color:  #ecefef;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: 160px;
+    left: 100px;
+}
+.hero-content-right .llustertion .size1 .size-7{
+    margin: 15px;
+    width: 30px;
+}
+
+.groupcontent {
+    display: flex;
+    border: 1px, solid rgb(223, 222, 222);
+    border-width: 0px 0px 1px 0px;
+    width: 80%;
+    height: 70px;
+    margin: 70px auto 0;
+    gap: 100px;
+}
+
+.groupcontent p{
+    font-size: 12px;
+}
+
+.groupcontent ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    gap: 140px;
+    font-weight: bold;
+}
+
+.title{
+    width: 100%;
+    position: relative;
+    top: 60px;
+}
+
+.title h1{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 36px;
+}
+
+.title p{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    font-size: 20px;
+}
+
+.column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 80%;
+    margin: 70px auto 0;
+    margin-top: 170px;
+    border: 1px solid rgb(223, 222, 222);
+    height: 450px;
+    border-width: 0px 0px 1px 0px;
+}
+
+.column-wrapper .column {
+    width: 33.33%;
+    flex: 1;
+}
+
+.column-wrapper .column .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.column-wrapper .column .card2{
+    position: relative;
+    top: 30px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.content-left{
+    width: 50%;
+}
+
+.content-left h1{
+    margin: 50px auto 0;
+    font-size: 30px;
+    width: 400px;
+    margin-top: 70px;
+}
+
+.content-left p{
+    margin: 20px auto 0;
+    margin-left: 195px;
+    font-size: 12px;
+    width: 300px;
+    opacity: 50%;
+}
+
+.content-left ul {
+    margin: 50px auto ;
+}
+
+.content-left ul li{
+    margin: 5px ;
+    margin-left: 210px;
+    margin-top: 30px;
+    position: relative;
+    top: 90px;
+    font-weight: bold;
+    /* list-style-type: none; */
+}
+
+.content-left .login{
+    text-decoration: none;
+    margin: 190px;
+    position: relative;
+    top: 70px;
+    font-size: 12px;
+    color: black;
+    border: 1px solid rgb(133, 189, 249);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content-right{
+    width: 50%;
+}
+
+.content-right .frame{
+    border: 2px solid black;
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+.content-right .frame img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.features-card{
+    background-color: #ecefef;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.features-card .features{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto 0;
+    position: relative;
+    top: 50px;
+    display: flex;
+}
+
+.features-left{
+    width: 50%;
+}
+
+.features-left img{
+    width: 200px;
+    border-radius: 20px;
+    margin: 80px auto 0;
+    margin-left: 160px;
+}
+
+.features-left h1{
+    margin: 50px auto;
+    width: 290px;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.features-left p{
+    margin: 80px auto;
+    width: 300px;
+    font-size: 12px;
+}
+
+.features .login{
+    text-decoration: none;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+    left: 65px;
+    color: #000000;
+    font-size: 10px;
+}
+
+.features-right{
+    width: 50%;
+}
+
+.features-right .frame{
+    border: 2px solid black;
+    margin: 50px auto ;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.features-right .frame img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.features-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    margin: 70px auto 0;
+    height: 300px;
+}
+
+.features-wrapper .features2{
+    width: 33.33%;
+    flex: 1;
+}
+
+.features-wrapper .features2 .card{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.features-wrapper .features2 .card h1{
+    margin: 30px;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+.features-wrapper .features2 .card p{
+    margin: 30px;
+    font-size: 12px;
+    margin-top: 100px;
+
+}
+
+.testmonial-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.testmonial-section .frame1 {
+    width: 80%;
+    margin: 70px auto 0;
+    text-align: center;
+    border: 1px solid rgb(229, 228, 228);
+    padding: 30px;
+    border-width: 0 0 1px 0;
+    height: 180px;
+}
+
+.testmonial-section .frame1 h1{
+    margin: 10px;
+    font-size: 36px;
+}
+
+.testmonial-section .frame1 p{
+    margin-left: 400px;
+    width: 400px;
+    font-size: 15px;
+}
+
+.testmonial-section .frame .frame2{
+    width: 80%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgb(229, 228, 228);
+    border-width: 0px 0px 1px 0px;
+    height: 400px;
+    margin: 70px auto 0;
+    position: relative;
+    top: 50px;
+}
+
+.testmonial-section .frame .frame2 .frame2-left{
+    width: 50%;
+}
+
+.testmonial-section .frame .frame2 .frame2-left h1{
+    /* margin: 50px auto 0; */
+    margin-left: -50px;
+    font-size: 30px;
+}
+
+.testmonial-section .frame .frame2 .frame2-left p{
+    margin: 50px auto 0;
+    margin-left: -50px;
+    width: 400px;
+    font-size: 12px;
+    position: relative;
+    top: 140px;
+}
+
+.testmonial-section .frame .frame2 .frame2-left .login{
+    text-decoration: none;
+    color: #000000;
+    margin: 50px;
+    margin-left: -50px;
+    font-size: 12px;
+    border: 2px solid  rgb(229, 228, 228);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 170px;
+}
+
+.testmonial-section .frame .frame2 .frame2-right{
+    width: 40%;
+}
+
+.testmonial-section .frame .frame2 .frame2-right .cards{
+    background-color:#ffe4e0;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto 0;
+    margin-left: 175px;
+    position: relative;
+    bottom: 250px;
+}
+
+.frame2 .frame2-right .cards .cards2{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 330px;
+    height: 350px;
+    margin: 50% auto 0;
+    position: relative;
+    top: 25px;
+}
+
+.frame2 .frame2-right .cards .cards2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.testmonial-section .frame .frame3{
+    width: 80%;
+    margin: 50px auto 0;
+    justify-content: center;
+    height: 400px;
+    display: flex;
+    border: 1px solid rgb(231, 229, 229);
+    border-width: 0 0 1px 0;
+    height: 500px;
+}
+
+.testmonial-section .frame .frame3 .frame3-left{
+    width: 50%;
+}
+
+.testmonial-section .frame .frame3 .frame3-left h1{
+    margin: 100px auto 0;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+.testmonial-section .frame .frame3 .frame3-left p{
+    margin: 50px auto 0;
+    width: 400px;
+    font-size: 12px;
+    position: relative;
+    top: 150px;
+    margin-left: 0;
+}
+
+.testmonial-section .frame .frame3 .frame3-left .login{
+    text-decoration: none;
+    color: #000000;
+    margin: 115px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 180px;
+    margin-left: 0;
+}
+
+.testmonial-section .frame .frame3 .frame3-right{
+    width: 50%;
+}
+
+.testmonial-section .frame .frame3 .frame3-right .cards{
+    background-color: #e4fce5;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto ;
+    margin-right: 0px;
+    position: relative;
+    bottom: 150px;
+}
+
+.frame3 .frame3-right .cards .cards2{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 330px;
+    height: 350px;
+    margin: 50% auto 0;
+    position: relative;
+    top: 25px;
+}
+
+.frame3 .frame3-right .cards .cards2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.testmonial-section .frame .frame4{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto 0;
+}
+
+.testmonial-section .frame .frame4 .frame4-left{
+    width: 50%;
+}
+
+.testmonial-section .frame .frame4 .frame4-left h1{
+    margin: 50px auto 0;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+.testmonial-section .frame .frame4 .frame4-left p{
+    margin: 50px auto 0;
+    width: 400px;
+    font-size: 12px;
+    position: relative;
+    top: 140px;
+    margin-left: 0;
+}
+
+.testmonial-section .frame .frame4 .frame4-left .login{
+    text-decoration: none;
+    color: #000000;
+    margin: 115px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 170px;
+    margin-left: 0;
+}
+
+.testmonial-section .frame .frame4 .frame4-right{
+    width: 50%;
+}
+
+.testmonial-section .frame .frame4 .frame4-right .cards{
+    background-color:#bcf6ef;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto 0;
+    margin-right: 0;
+    position: relative;
+    bottom: 200px;
+}
+
+.frame4 .frame4-right .cards .cards2{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 330px;
+    height: 350px;
+    margin: 50% auto 0;
+    position: relative;
+    top: 25px;
+}
+
+.frame4 .frame4-right .cards .cards2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.container-class{
+    background-color:  #ecefef;
+    justify-content: space-between;
+    height: 750px;
+    /* gap: 30px; */
+}
+
+.container-class .class{
+    margin: 70px auto 0;
+    text-align: center;
+    padding: 50px;
+    
+}
+
+.container-class .class h1{
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.container-class .class p{
+    font-size: 15px;
+    width: 500px;
+    margin: 10px;
+    margin-left: 500px;
+
+}
+
+.container-class .class1{
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    display: flex;
+    margin-top: -10px;
+}
+
+.container-class .class1 .class1-left{
+    width: 35%;
+    height: 450px;
+    margin: 30px;
+}
+
+.container-class .class1 .class1-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.container-class .class1 .class1-right{
+    width: 65%;
+    height: 400px;
+    margin: 50px auto 0;
+}
+
+.container-class .class1 .class1-right h1 p{
+    border: 1px solid black;
+    width: 100px;
+}
+
+.container-class .class1 .class1-right h1{
+    font-size: 40px;
+    margin: 30px;
+
+}
+
+.container-class .class1 .class1-right p{
+    margin: 30px;
+    font-size: 20px;
+    width: 550px;
+    border: 1px solid rgb(231, 229, 229);
+    border-width: 0 0 1px 0;
+    height: 130px;
+}
+
+.container-class .class1 .class1-right2 h3 {
+    margin: 30px;
+    font-size: 15px;
+}
+
+.container-class .class1 .class1-right2 div {
+    margin: 30px;
+    font-size: 12px;
+    margin-top: -23px;
+}
+
+.table-content{
+    width: 100%;
+}
+
+.table-content .table1{
+    position: relative;
+    top: 25px;
+    margin-top: 130px;
+}
+
+.table-content .table1 h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.table-content .table1 p{
+    text-align: center;
+    font-size: 15px;
+    width: 500px;
+    margin: 10px auto 0;
+
+}
+
+.table-wrapper{
+    display: flex; 
+    justify-content: space-between;
+    width: 80%;
+    margin: 70px auto 0;
+    gap: 30px;
+    border: 1px solid  rgb(231, 229, 229);
+    height: 400px;
+    border-width: 0 0 1px 0;
+}
+
+.table-wrapper .table{
+    width: 33.33%;
+    flex: 1;
+}
+
+.table-wrapper .table .card{
+    height: 200px;
+    border-radius: 10px;
+    
+}
+
+.table-wrapper .table .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.table-wrapper .table .card2 h1{
+    position: relative;
+    top: 30px;
+}
+
+.table-wrapper .table .card2 p{
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    gap: 10px;
+}
+
+.table2 .faq{
+    display: flex;
+    width: 80%;
+    margin: 70px auto;
+    height: 100%;
+}
+
+.table2 .faq .faq-left{
+    width: 40%;
+}
+
+.table2 .faq .faq-left h1{
+    width: 250px;
+    font-size: 30px;
+}
+
+.table2 .faq .faq-left p{
+    font-size: 10px;
+    width: 270px;
+    position: relative;
+    top: 15px;
+}
+
+.table2 .faq .faq-right{
+    width: 60%;
+}
+
+.table2 .faq .faq-right .options{
+    margin-left: 50px;
+}
+
+.table2 .faq .faq-right .options .option1{
+    border:2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.table2 .faq .faq-right .options .option1 h1{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.table2 .faq .faq-right .options .option1 p{
+    font-size: 15px;
+    width: 500px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.table2 .faq .faq-right .options .option2{
+    font-size: 15px;
+    border: 2px solid rgb(231, 229, 229);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.table2 .faq .faq-right .options .option2 h1{
+    margin: 10px;
+}
+
+.table2 .faq .faq-right .options .option3{
+    font-size: 15px;
+    border: 2px solid rgb(231, 229, 229);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 40px;
+}
+
+.table2 .faq .faq-right .options .option3 h1{
+    margin: 10px;
+}
+
+.table2 .faq .faq-right .options .option4{
+    font-size: 15px;
+    border: 2px solid rgb(231, 229, 229);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 60px;
+}
+
+.table2 .faq .faq-right .options .option4 h1{
+    margin: 10px;
+}
+
+.container{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.container2{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 500px;
+    margin: 70px auto;
+
+}
+
+.container2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.footer-content{
+    width: 100%;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.main-content{
+    width: 80%;
+    display: flex;
+    margin: 70px auto;
+    border: 1px solid  rgb(231, 229, 229);
+    border-width: 0 0 1px 0;
+    height: 350px;
+}
+
+.main-content-left{
+    width: 40%;
+}
+
+.main-content-left img{
+    margin-left: -16px;
+    margin-top: -16px;
+}
+
+.main-content-left h1{
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+.main-content-left a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+.main-content-right{
+    width: 60%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.main-content-right ul h1{
+    margin: 40px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.main-content-right ul li{
+    margin: 40px;
+    list-style-type: none;
+}
+
+.lower-footer{
+    width: 80%;
+    margin: 70px auto;
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.lower-footer .main4{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+    .on-mobile {
+        display: none;
+    }
+    .on-desktop {
+        display: block;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 10px auto 0;
+        display: block;
+    }
+    .hero-content-left img{
+        border-radius: 20px;
+        margin: 10px;
+        width: 150px;
+    }
+    .hero-content-left h1{
+        font-size: 26px;
+        margin: 10px auto 0;
+        margin-left: -18px;
+        width: 300px;
+    }
+    .hero-content-left p{
+        width: 280px;
+        margin: 10px;
+        font-size: 15px;
+    }
+    .hero-content-left a{
+        margin: 10px;
+        position: relative;
+        top: 10px;
+    }
+    .hero-content-left .center{
+        margin: 10px;
+        position: relative;
+        top: 15px;
+    }
+    .hero-content-right .llustertion1{
+        width: 250PX;
+        height: 200px;
+        margin: 10px;
+        margin-top: 30px;
+    }
+    .hero-content-right .llustertion2{
+        width: 250PX;
+        height: 80px;
+        margin: 50px auto ;
+        margin-left: 10px;
+    }
+    .hero-content-right .llustertion2 h4{
+        margin: 25px;
+        margin-left: 70px;
+        font-size: 12px;
+    }
+    .hero-content-right .llustertion2 p{
+        font-size: 10px;
+        margin-top: -20px;
+        margin-left: 70px;
+    }
+    .hero-content-right .llustertion2 .size {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hero-content-right .llustertion2 .size-6 {
+        margin: 6px;
+        width: 25px;
+    }
+    
+    .hero-content-right .llustertion .size1 {
+        width: 40px;
+        height: 40px;
+        bottom: 140px;
+        left: 30px;
+    }
+    .hero-content-right .llustertion .size1 .size-7{
+        margin: 8px;
+        width: 25px;
+    }
+    .groupcontent {
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .groupcontent p{
+        font-size: 10px;
+    }
+    
+    .groupcontent ul {
+        gap: 20px;
+        font-size: 12px;
+    }
+    .title{
+        width: 100%;
+        position: relative;
+        top: 10px;
+    }
+    
+    .title h1{
+        font-size: 26px;
+    }
+    
+    .title p{
+        top: 40px;
+        width: 400px;
+        font-size: 12px;
+    }
+    .column-wrapper {
+        width: 100%;
+        margin: 10px auto;
+        margin-top: 70px;
+        height: 300px;
+    }
+    
+    .column-wrapper .column .card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    
+    .column-wrapper .column .card2{
+        position: relative;
+        top: 15px;
+        margin: 10px;
+    }
+    .content{
+        /* display: block; */
+    }
+    .content-left h1{
+        margin: 10px;
+        font-size: 20px;
+        width: 300px;
+        margin-top: 10px;
+    }
+    .content-left p{
+        margin: 10px;
+        width: 250px;
+    }
+    .content-left ul li{
+        margin: 20px;
+        margin-top: 20px;
+        position: relative;
+        top: 0;
+        font-weight: bold;
+        /* list-style-type: none; */
+    }
+    .content-left .login{
+        margin: 10px;
+        top: -30px;
+    }
+    .content-right .frame{
+        width: 210px;
+        height: 250px;
+        margin: 25px;
+    }
+    .features-card .features{
+        display: block;
+        height: 650px;
+        width: 80%;
+    }
+    .features-left img{
+        width: 150px;
+        border-radius: 20px;
+        margin: 50px auto 0;
+        margin-left: 10px;
+    }
+        
+    .features-left h1{
+        margin: 10px;
+        margin-top: 20px;
+    }
+        
+    .features-left p{
+        margin: 10px;
+        width: 300px;
+        font-size: 12px;
+    }
+    .features .login{
+        margin: 10px;
+        margin-left: -50px;
+        top: 10px;
+    }
+    .features-right .frame{
+        margin: 10px;
+        margin-top: 50px;
+        width: 350px;
+        height: 300px;
+    }
+    .features-wrapper{
+        display: block;
+        height: 700px;
+    }
+    .features-wrapper .features2{
+        width: 100%;
+        flex: 1;
+    }
+}
+
