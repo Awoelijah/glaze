@@ -11,7 +11,7 @@ body {
 
 header {
     width: 100%;
-    background-color: #ecefef;   
+    background-color: #f7f8fa;   
 }
 
 .navbar{
@@ -74,7 +74,7 @@ header {
 }
 
 .hero{
-    background-color: #ecefef;
+    background-color: #f7f8fa;
     width: 100%;
     padding: 100px 0;
 }
@@ -394,7 +394,7 @@ header {
 }
 
 .features-card{
-    background-color: #ecefef;
+    background-color: #f7f8fa;
     justify-content: space-between;
     padding: 60px 0;
 }
@@ -484,11 +484,14 @@ header {
 
 .features-wrapper .features2 .card h1{
     font-size: 18px;
-    
+    position: relative;
+    bottom: 10px;
 }
 
 .features-wrapper .features2 .card h1 img{
     width: 30px;
+    position: relative;
+
 }
 
 .features-wrapper .features2 .card p{
@@ -686,7 +689,7 @@ header {
 }
 
 .testmonial-section .frame .frame4 .frame4-right .cards{
-    background-color: #e4fce5;
+    background-color: #e9f4e4;
     border-radius: 10px;
     width: 80%;
     height: 400px;
@@ -710,7 +713,7 @@ header {
 }
 
 .container-class{
-    background-color:  #ecefef;
+    background-color:  #f7f8fa;
     padding: 80px 0;
 }
 
@@ -1463,6 +1466,8 @@ header {
     
     .menu-icon  {
         display: block;
+        width: 26px;
+        margin-bottom: 15px;
     }
 
     .hero{
@@ -1695,10 +1700,6 @@ header {
         font-size: 12px;
         margin-top: 100px;
     }
-
-     .testmonial-section{
-
-     }
 
     .testmonial-section .frame1 {
         width: 95%;
